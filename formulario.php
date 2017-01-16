@@ -13,7 +13,7 @@
 	5. Para que se vea en mi web, debo indicar la ruta donde se encuentra el fichero css. También debo ayudarme del fichero demo, ubicado en la descarga anterior, donde tendré el nombre de todos los iconos que debo mostrar. 
 	-->
 
-	<link rel="stylesheet" type="text/css" href="CSS/demo.css">
+ 	<link rel="stylesheet" type="text/css" href="CSS/demo.css">
 	<link rel="stylesheet" type="text/css" href="CSS/estiloAcceso.css">
 	<!-- tengo que comprobar si puedo meter varios bancos de imagenes en el mismo css
 	<link rel="stylesheet" type="text/css" href="CSS/estiloIconos.css">-->
@@ -33,17 +33,10 @@
 2. Búsqueda
 3. Cesta de la compra
  -->
-	<ul id="iconoFormulario">
-		<!-- Pongo el nombre del fichero que quiero mostrar en la web. -->
-		<a class="formularioRegistro" title="IDENTIFÍCATE"> 
-			<li class="icon icon-user"></li>
-		</a>
-	</ul>
-
 		<div id="loginUsuario">
 			
 			<h5>Identifícate</h5>
-			<a href="index.html" class="icon icon-cancel-circle"></a><br>
+			<a href="indexMobile.php" class="icon icon-cancel-circle"></a><br>
 			<!-- Para el formulari no debo poner ninguna classe en etiqueta deben ir en los input, con las siguientes normas
 			1. todos los input dentro una class con el mismo nombre para definir su formato en css
 			2. Se crear un div después de cada input con el fin de definir tb el mismo mensaje para todos los input no rellenos y un mensaje para que sea uno u otro dependindo del campo sin rellenar
@@ -88,7 +81,7 @@
 		<div id="contenedorRegistroUsuario">
 			<div id="datosUsuario">
 					<h5>Regístrate</h5>
-					<a href="index.html" class="icon icon-cancel-circle"></a><br>
+					<a href="indexMobile.php" class="icon icon-cancel-circle"></a><br>
 					<form id="registroUser" method="post" action="PHP/registro.php">
 					
 					<div class="columUna"> 

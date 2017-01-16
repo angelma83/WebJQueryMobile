@@ -24,18 +24,6 @@ input {
 
  } 
 
-#iconoFormulario a {
-	/*Por qué si pongo posición absoluta no me deja colocarlo a la derecha de la imagen con float:right. */
-	position: absolute;
-	right: 2em;
-	top: 1em;
-	font-size: 2em;
-}
-
-#iconoFormulario li:hover {
-	color: grey;
-}
-
 
 /* id no creado en html y que mediate javascript se genera y se muestra según se indica en css*/
 #velo {
@@ -69,9 +57,9 @@ los campos del formulario*/
 #loginUsuario {
 	position: fixed;
 	right: 3em;
-	top: 4em;
-	width: 25%;
-	height: 45%;
+	top: 3em;
+	width: 90%;
+	height: 25%;
 	background-color: white;
 	z-index: 1000;
 	display: none;
@@ -79,7 +67,7 @@ los campos del formulario*/
 
 h5{
 	position: absolute;
-	top: 0.9em;
+	top: 0.5em;
 	left: 1em;
 
 }
@@ -105,46 +93,42 @@ h5{
 	font-family: tahoma;
 	cursor: pointer;
 	color: grey;
-	font-size: 0.7em;
+	font-size: 0.5em;
+	top:10em;
 
 }
 
 /*por qué no accede?, lo he intentado tb con .formularioAcceso label y con label .noRegistrado*/
 label.noRegistrado {
 	position: relative;
-	top:1.5em;
+	top:0.8em;
 	cursor: none;
 
 }
-
  
 /*como hacer que mueva todos los input al mismo paso sin posicionar todas en el mismo top*/
 input.boton{
-	position: relative;
-	top: 0.8em;
+	
 	border: none;
 	width: 100%;
-	height: 2em;
-	font-size: 0.9em;
-	margin-bottom: 0.5em;
-	margin-top: 0.5em;
 	/*por qué el margin no lo coge y el padding si??*/
 }
 
 .formularioAcceso input.inputRegistro{
 	border: none;
+	position: relative;
 	width: 100%;
-	height: 1.5em;
-	font-size: 0.9em;
-	margin-top: 0.2em;
-	margin-bottom: 0.5em;
+	/*height: 1em;*/
+	font-size: 0.5em;
+	/*margin-top: 0.2em;
+	margin-bottom: 0.5em;*/
 }
 
 input#recordarUsuario{
 	position: fixed;
-	left: 70%;
-	top: 13.5em;
-	width: 8%;
+	left: 20%;
+	top: 13em;
+	width: 10%;
 	height: 2.5%;
 }
 .formularioAcceso label.texto{
@@ -159,7 +143,7 @@ input#recordarUsuario{
 	display: none;
 	color: red;
 	float: right;
-	top: -1.6em;
+	top: -1em;
 	right: 0.3em;
 }
 
@@ -167,8 +151,8 @@ input#recordarUsuario{
 	position: fixed;
 	right: 3em;
 	top: 4em;
-	width: 40%;
-	height: 85%;
+	width: 80%;
+	height: 75%;
 	background-color: white;
 	z-index: 1000;
 	display: none;
@@ -211,15 +195,15 @@ div.columUna .imagenMujer{
 div.columUna input, div.columDos input{
 	border: none;
 	width: 100%;
-	height: 2em;
+	height: 1.5em;
 	font-size: 1em;
  }
 
  div.columDos input.sexo {
 	position: relative;
 	float: left;
-	top: 1em;
-	left: -7em;
+	top: 0.2em;
+	left: -2.5em;
 	border: none;
 	width: 95%;
 	height: 1em;
@@ -229,21 +213,22 @@ label.etiqueta{
 	position: relative;
 	float: left;
 	cursor: initial;
-	left: 10%;
+	left: 20%;
+	top: -1em;
 }
 
 .columDos input#politicaPrivacidad{
 	position: fixed;
-	left: 74%;
-	top: 46.5em;
+	left: 44%;
+	top: 45em;
 	width: 8%;
 	height: 2.5%;
 }
 .columDos label.texto{
 	position: relative;
 	float: right;
-	right:-10%;
-	top: 1em;
+	right:-12%;
+	top: 0.5em;
 	border: none;
 }
 
@@ -261,4 +246,6 @@ label.etiqueta{
 	cursor:pointer;
 	background-color: black;
 	color:white;
+	border: none;
+	width: 100%;
 }

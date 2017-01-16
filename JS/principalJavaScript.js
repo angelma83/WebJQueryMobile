@@ -1,10 +1,12 @@
+
 // se comprueba que el fichero esta cargado y se llama a función,
 // desde donde se comprueban todos los sucesos de la página 
 $(document).ready(inicia);
 
 	function inicia() {
+		
 		// se comprueba que han iniciado el proceso de registro para pintar la modal con el acceso a web. 
-		$(".formularioRegistro").click(pintaFormulario);
+		$("#formularioRegistro").click(pintaFormulario);
 		$("#accesoRegistro").click(pintaRegistro);
 		$("#enviarDatos").click(comprobacionAcceso);
 		$("#registro").click(comprobacionRegistro);
@@ -24,7 +26,7 @@ $(document).ready(inicia);
 	}
 
 	function pintaRegistro(){
-
+				
 		$("#loginUsuario").css("display","none").fadeOut(1000);
 		$("#contenedorRegistroUsuario").css("display","in-line").fadeIn(2000);	
 	}
